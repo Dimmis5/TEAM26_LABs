@@ -16,4 +16,22 @@ def rotate(num: List[int], k: int) :
 
     print(num)
 
-print(rotate([1,2,3,4,5,6,7], 10))
+
+test_cases = [
+    #([], 3),  Does not work                  
+    ([1], 0),                 
+    ([1], 1),                 
+    ([1,2,3], 0),             
+    ([1,2,3], 3),             
+    ([1,2,3], 5),             
+    ([1,1,1,1], 2),           
+
+    ([1,2,3,4,5], 2),        
+    ([1,2,3,4,5,6], 3),       
+    ([10,20,30,40], 1),       
+]
+
+for arr, k in test_cases:
+    print(f"Original: {arr}, k={k}")
+    rotate(arr.copy(), k)  
+    print("-" * 30)

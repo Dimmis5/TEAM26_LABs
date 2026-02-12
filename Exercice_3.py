@@ -17,3 +17,14 @@ def merge(intervals: List[List[int]]) -> List[List[int]]:
     return merged_intervals
 
 print(merge([[1,3],[2,6],[8,10],[15,18]]))
+
+test_cases = [
+    #[], Does not work
+    [[1,3]],  
+    [[1,2],[3,4]], 
+    [[1,10],[2,5],[6,8]], 
+    [[1,3],[1,3],[1,3]],  
+]
+
+for case in test_cases:
+    print(merge(case))
