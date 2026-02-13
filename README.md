@@ -33,15 +33,10 @@ To find the first unique character, we compared two methods. In both cases, we u
 ## Complexity Analysis Summary
 
 Exercise, Time complexity, Space complexity
-Ex 1: Integer Mirror | O(log n) | O(1) | Loop runs once per digit; d digits = log₁₀(n)
----
-Ex 2: Balanced Symbols | O(n) | O(n) | Single pass; stack stores up to n/2 elements
----
-Ex 3: Merge Intervals | O(n log n) | O(n) | Dominated by sorting; linear merge afterward
----
-Ex 4: Polynomial Eval | O(n) | O(1) | Horner's: n multiplications vs naive O(n²)
----
-Ex 5: Array Rotation (optimal) | O(n) | O(1) | Reverse method; temp array is O(n) space
----
-Ex 6: First Unique Char | O(n) | O(1) | Two passes; dictionary size bounded by alphabet
+- Ex 1: Integer Mirror, O(log n), O(1), Loop runs once per digit; d digits = log₁₀(n)
+- Ex 2: Balanced Symbols, O(n), O(n), Single pass; stack stores up to n/2 elements
+- Ex 3: Merge Intervals, O(n log n), O(n), Dominated by sorting; linear merge afterward
+- Ex 4: Polynomial Eval, O(n), O(1), Horner's: n multiplications vs naive O(n²)
+- Ex 5: Array Rotation, O(n), O(1), Reverse method; temp array is O(n) space
+- Ex 6: First Unique Char, O(n), O(1), Two passes; dictionary size bounded by alphabet
 
