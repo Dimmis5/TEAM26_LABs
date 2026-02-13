@@ -16,7 +16,6 @@ def merge(intervals: List[List[int]]) -> List[List[int]]:
     merged_intervals.append([current_start, current_end])
     return merged_intervals
 
-print(merge([[1,3],[2,6],[8,10],[15,18]]))
 
 test_cases = [
     #[], Does not work
