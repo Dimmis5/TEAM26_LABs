@@ -2,7 +2,7 @@
 
 ## Team 26
 **Team Members:**
-- Kamilla VAISOVA - Exercises 
+- Kamilla VAISOVA - Exercises 2
 - Diméo ZHANG - Exercises 1, 4
 - Yannick ZHANG - Exercises 3
 
