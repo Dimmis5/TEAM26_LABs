@@ -2,9 +2,9 @@
 
 ## Team 26
 **Team Members:**
-- Kamilla VAISOVA - Exercises 2
+- Kamilla VAISOVA - Exercise 2
 - Diméo ZHANG - Exercises 1, 4
-- Yannick ZHANG - Exercises 3
+- Yannick ZHANG - Exercise 3
 
 ---
 ## Exercise Descriptions
@@ -30,6 +30,6 @@ The FollowerMatrix structure implements a directed social graph using a 2D boole
 
 Exercise, Time complexity, Space complexity
 - Ex 1: Friend Request Timeline, O (n), O(1), Loops traverse the n -character string to count patterns.
-- Ex 2: Balanced Symbols, O(n), O(n), Single pass; stack stores up to n/2 elements
-- Ex 3: Merge Intervals, O(n log n), O(n), Dominated by sorting; linear merge afterward
+- Ex 2: Mutual friends detection, O(m·n), O(m·n)
+- Ex 3: Friend recommendations by interests, O(U·I + U log U), O(U)
 - Ex 4: Mutual Followers Matrix, O(N²), O(N²), Initializes and traverses a fixed 2D grid to store all possible connections and detect reciprocal relationships between users.
