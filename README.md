@@ -31,5 +31,5 @@ The FollowerMatrix structure implements a directed social graph using a 2D boole
 Exercise, Time complexity, Space complexity
 - Ex 1: Friend Request Timeline, O (n), O(1), Loops traverse the n -character string to count patterns.
 - Ex 2: Mutual friends detection, O(m·n), O(m·n)
-- Ex 3: Friend recommendations by interests, O(U·I + U log U), O(U)
+- Ex 3: Friend recommendations by interests, O(U·I + U log U), O(UI)
 - Ex 4: Mutual Followers Matrix, O(N²), O(N²), Initializes and traverses a fixed 2D grid to store all possible connections and detect reciprocal relationships between users.
