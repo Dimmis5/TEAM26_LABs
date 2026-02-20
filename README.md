@@ -3,7 +3,7 @@
 ## Team 26
 **Team Members:**
 - Kamilla VAISOVA - Exercises 
-- Diméo ZHANG - Exercises 1
+- Diméo ZHANG - Exercises 1, 4
 - Yannick ZHANG - Exercises 
 
 ---
@@ -20,6 +20,7 @@ we check if it matches the top of the stack. If the stack is empty, it means the
 To merge overlapping intervals, we first sort all intervals by their start value. This allows us to process them in order from left to right. We then keep track of the current merged interval as we scan through the sorted list. For each new interval, we check if it overlaps with our current interval (by comparing if the new start is less than or equal to the current end). If they overlap, we extend the current interval's end to cover both. If they don't overlap, we save the current interval and start a new one. This approach ensures we only need one pass through the data after sorting.
 
 ### Exercise 4: Mutual Followers Matrix
+The FollowerMatrix structure implements a directed social graph using a 2D boolean array where each cell indicates whether one user follows another. The core functions consist of Follow and Unfollow, which update the matrix entries, and Is_following, which verifies the existence of a specific connection. The system retrieves lists of people through Get_following, which checks the row associated with a user, and Get_followers, which examines the corresponding column to see who follows them. Furthermore, the solution identifies mutual follow pairs where two users follow each other and calculates an influence score to measure a person's total engagement relative to the overall size of the network.
 
 ---
 
@@ -29,4 +30,4 @@ Exercise, Time complexity, Space complexity
 - Ex 1: Friend Request Timeline, O (n), O(1), Loops traverse the n -character string to count patterns.
 - Ex 2: Balanced Symbols, O(n), O(n), Single pass; stack stores up to n/2 elements
 - Ex 3: Merge Intervals, O(n log n), O(n), Dominated by sorting; linear merge afterward
-- Ex 4: Mutual Followers Matrix,
+- Ex 4: Mutual Followers Matrix, O(N²), O(N²), Initializes and traverses a fixed 2D grid to store all possible connections and detect reciprocal relationships between users.
