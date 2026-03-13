@@ -16,12 +16,13 @@ This code simulates a simplified social media activity feed system using two dat
 
 ### Exercise 3:  
 
----
+This project implements the core engine for a social media 'Trending' feed, utilizing a custom Priority Queue built on a sorted linked list. Rather than ordering posts chronologically, the system dynamically ranks content based on a composite engagement score (driven by likes, comments, and shares). It handles standard queue operations—such as safely inserting posts into their correct ranked position and extracting the most viral content—but also includes advanced feed mechanics. The program can update a specific post's score on the fly by cleanly detaching and repositioning its node, simulate content aging through a time-decay penalty on older posts, and efficiently fetch the top K trending items. Overall, this code demonstrates how to maintain a complex, constantly shifting ranking system.
 
 ## Complexity Analysis Summary
 
 Exercise, Time complexity, Space complexity
 - Ex 1: Content Feed Navigation with Doubly Linked List, time O(n) for most but O(n²) for reorder_by_views, space O(n) because of prev and next
 - Ex 2: Activity Feed Processing with Stacks and Queues, O(1) per push/pop/enqueue/dequeue, O(n) Stack and queue store up to n activities/notifications; undo stack and processed log also use linear space
+ - Ex 3: Trending Feed Processing with a Priority Queue (Sorted Linked List), O(N) per enqueue/update_score, O(1) per dequeue_max/peek, O(n) Sorted linked list stores up to n posts; temporary queue during refresh also uses linear space
 - Ex 3: 
 
