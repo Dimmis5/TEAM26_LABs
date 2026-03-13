@@ -24,6 +24,6 @@ To merge overlapping intervals, we first sort all intervals by their start value
 
 Exercise, Time complexity, Space complexity
 - Ex 1: Integer Mirror, O(log n), O(1), Loop runs once per digit; d digits = log₁₀(n)
-- Ex 2: Balanced Symbols, O(n), O(n), Single pass; stack stores up to n/2 elements
+- Ex 2: Activity Feed Processing with Stacks and Queues, O(1) per push/pop/enqueue/dequeue, O(n) Stack and queue store up to n activities/notifications; undo stack and processed log also use linear space
 - Ex 3: Merge Intervals, O(n log n), O(n), Dominated by sorting; linear merge afterward
 
