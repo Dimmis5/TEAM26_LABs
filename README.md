@@ -2,14 +2,15 @@
 
 ## Team 26
 **Team Members:**
-- Kamilla VAISOVA - Exercise 1 
-- Diméo ZHANG - Exercise 2
+- Kamilla VAISOVA - Exercise 2
+- Diméo ZHANG - Exercise 1
 - Yannick ZHANG - Exercise 3
 ---
 ## Exercise Descriptions
 
-### Exercise 1: Binary trees 
-This exercise represents social media categories using a binary tree, where each node is a category and its children are subcategories. To solve it, we created a CategoryNode class and used mainly recursion to traverse the tree and compute values like height, number of nodes, and balance. Each function works by solving the problem on the left and right subtrees. For checking if the tree is complete, we used a queue with level-order traversal (BFS). Overall, the solution is based on efficiently traversing the tree and breaking problems into smaller recursive steps.
+### Exercise 1: Graph Representations for Social Networks 
+
+SocialGraph structure that models users as vertices and friendships as edges using two simultaneous internal representations: an Adjacency Matrix and an Adjacency Linked List. The system must support core operations such as adding or removing friendships, checking if two users are friends, retrieving a user's friend list, and calculating individual degrees. Beyond basic management, the exercise involves calculating global graph properties like completeness and edge density, while also providing functionality to convert data between the matrix and list formats.
 
 ### Exercise 2: Tree Traversals for Content Processing
 
@@ -21,7 +22,7 @@ This exercise focuses on the use of generalized trees (N-ary trees) to represent
 ## Complexity Analysis Summary
 
 Exercise, Time complexity, Space complexity
-- Ex 1: time: tree traversal, height, count, search, complete tree O(n), balanced check O(n^2); space: O(n)
+- Ex 1: Matrix O(1) for updates/checks and O(V^2) space; List O(d) for updates/checks and O(V+E) space
 - Ex 2: O(n) for all traversals and analytics, space O(h) for recursion stack
 - -Ex3 :The time complexity is O(n) for all traversals and metric calculations, as each node in the generalized tree is visited once. The conversion between generalized and binary trees also runs in O(n). The space complexity is O(d) for recursive methods, where d is the maximum tree depth, and O(n) for iterative breadth-first traversal using a queue.
 - Ex 3: O(n), O(d)
