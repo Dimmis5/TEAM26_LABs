@@ -8,7 +8,7 @@
 ---
 ## Exercise Descriptions
 
-### Exercise 1: 
+### Exercise 1: Divide & Conquer – Spatial Splitting
 Recursive Quadtree decomposition that divides a 2D space into four equal quadrants until a minimum size is reached, effectively partitioning the area into a hierarchical grid. By integrating a point-counting function, the algorithm calculates the density of each region—the ratio of points to area—and recursively filters the space to return only those segments exceeding a specific threshold. This Divide and Conquer approach is highly efficient for identifying data clusters because it allows the program to "prune" or ignore vast empty areas while focusing computational resources on densely populated "hotspots," significantly optimizing the search process compared to a standard linear scan.
 
 ### Exercise 2: Fractals
