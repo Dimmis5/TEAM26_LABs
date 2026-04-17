@@ -46,7 +46,7 @@ def find_dense_regions(points, x, y, width, height, min_size, density_threshold)
     
     return dense_regions
 
-# Test avec des données manuelles
+# Test 
 my_points = [
     (5, 5), (2, 3), (8, 7), (1, 1), (4, 4),
     (80, 80), (90, 90),                     
