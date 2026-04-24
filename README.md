@@ -2,14 +2,14 @@
 
 ## Team 26
 **Team Members:**
-- Kamilla VAISOVA - Exercise 
+- Kamilla VAISOVA - Exercise 1
 - Diméo ZHANG - Exercise 3
 - Yannick ZHANG - Exercise 2
 ---
 ## Exercise Descriptions
 
-### Exercise 1: Divide & Conquer – Spatial Splitting
-Recursive Quadtree decomposition that divides a 2D space into four equal quadrants until a minimum size is reached, effectively partitioning the area into a hierarchical grid. By integrating a point-counting function, the algorithm calculates the density of each region—the ratio of points to area—and recursively filters the space to return only those segments exceeding a specific threshold. This Divide and Conquer approach is highly efficient for identifying data clusters because it allows the program to "prune" or ignore vast empty areas while focusing computational resources on densely populated "hotspots," significantly optimizing the search process compared to a standard linear scan.
+### Exercise 1: Binary search trees
+This is a Binary Search Tree (BST) that manages user profiles. Each node stores a user ID, name, and friends list. It supports inserting users, searching by ID, listing users in sorted order, deleting users, checking if the tree is balanced, and counting leaf nodes.
 
 ### Exercise 2:Binary Heap – Trending Posts Feed
 In this exercise, we implemented a binary heap structure and its associated methods, and explored its application in a social network context. The heap organizes posts based on their number of likes, ensuring that the most popular content is always accessible at the root. 
@@ -23,8 +23,6 @@ Trie structure to manage username autocomplete and a Segment Tree to analyze use
 ## Complexity Analysis Summary
 
 Exercise, Time complexity, Space complexity
-- ex 1: spatial splitting, $O(N log(S/min_size))$, $O(log(S/min_size))
-- ex 2: sierpinski, O(3^depth), O(depth) ; tree, O(2^depth), O(depth) ; fractal dimension, O(B × N²/s²), O(N²)
 - ex 3: Autocomplete, O(L + S) for prefix search and result collection , O(N x L_{avg}) for total node storage
 
 
