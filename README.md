@@ -2,9 +2,9 @@
 
 ## Team 26
 **Team Members:**
-- Kamilla VAISOVA - Exercise 2
-- Diméo ZHANG - Exercise 1
-- Yannick ZHANG - Exercise 3
+- Kamilla VAISOVA - Exercise 
+- Diméo ZHANG - Exercise 3
+- Yannick ZHANG - Exercise 
 ---
 ## Exercise Descriptions
 
@@ -14,14 +14,15 @@ Recursive Quadtree decomposition that divides a 2D space into four equal quadran
 ### Exercise 2: Fractals
 In this exercise, we implemented three fractal-related programs using recursion and numerical analysis. The first was a Sierpinski triangle, which works by splitting a triangle into three smaller copies of itself, repeating until a set depth is reached. The second was a fractal tree, where each branch recursively grows two smaller branches at ±30 degrees, mimicking the structure of a real tree. The third was a box-counting algorithm to estimate the fractal dimension of an image: by overlaying grids of decreasing box sizes and counting how many boxes intersect the fractal, then plotting the results on a log-log scale, the slope of the resulting line gives the fractal dimension. For the Sierpinski triangle, the expected dimension is approximately 1.585, which reflects the fact that it is more complex than a line but does not fill a 2D surface. Overall, the exercises illustrated how simple recursive rules can produce complex geometric patterns, and how mathematical tools like logarithms can quantify that complexity.
 
-### Exercise 3:  
-In this exercise, we generated natural-looking patterns using recursion. The midpoint displacement algorithm creates irregular lines by recursively splitting a segment and adding random offsets, while gradually reducing roughness. This idea is extended in the diamond-square algorithm, which builds a 2D terrain by subdividing a grid and adding controlled randomness to simulate realistic landscapes. Finally, an artifact detection function identifies abnormal height differences between neighboring cells. Overall, the exercise shows how recursion and randomness can model natural structures and how simple checks can evaluate their consistency.
+### Exercise 3: Prefix and Range Trees – Autocomplete & Activity Range Queries 
+Trie structure to manage username autocomplete and a Segment Tree to analyze user activity range queries. In Part A, the Trie was built using nodes containing character dictionaries and user IDs to enable fast prefix searching and "search-as-you-type" suggestions for a database of 50,000 users. In Part B, the Segment Tree was constructed from an initial activity array to store daily post counts over a 30-day period. This structure allows the system to efficiently calculate total post sums, as well as identify minimum and maximum activity levels for any specific date range, such as rolling totals for a final week of activity
 
 ## Complexity Analysis Summary
 
 Exercise, Time complexity, Space complexity
 - ex 1: spatial splitting, $O(N log(S/min_size))$, $O(log(S/min_size))
 - ex 2: sierpinski, O(3^depth), O(depth) ; tree, O(2^depth), O(depth) ; fractal dimension, O(B × N²/s²), O(N²)
+- ex 3: Autocomplete, O(L + S) for prefix search and result collection , O(N x L_{avg}) for total node storage
 
 
 
