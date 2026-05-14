@@ -3,13 +3,13 @@
 ## Team 26
 **Team Members:**
 - Kamilla VAISOVA - Exercise 1
-- Diméo ZHANG - Exercise 3
+- Diméo ZHANG - Exercise 1
 - Yannick ZHANG - Exercise 2
 ---
 ## Exercise Descriptions
 
-### Exercise 1: Binary search trees
-This is a Binary Search Tree (BST) that manages user profiles. Each node stores a user ID, name, and friends list. It supports inserting users, searching by ID, listing users in sorted order, deleting users, checking if the tree is balanced, and counting leaf nodes.
+### Exercise 1: Influencer Coverage – Minimal User Set (Ref. Vertex Cover variant)
+Influencer Coverage problem by first creating an `is_valid_coverage` function to verify if every user in the social network is either selected or directly connected to a selected node. I then implemented two search strategies: a brute-force method using bitmasking to find the exact minimum dominating set for small graphs and a greedy approximation that efficiently picks users based on the number of new nodes they cover. Finally, I integrated these functions into a complete Python script with a test environment, demonstrating how the greedy heuristic provides a fast alternative to the computationally expensive exact search used for finding optimal influence.
 
 ### Exercise 2:Binary Heap – Trending Posts Feed
 In this exercise, we implemented a binary heap structure and its associated methods, and explored its application in a social network context. The heap organizes posts based on their number of likes, ensuring that the most popular content is always accessible at the root. 
@@ -23,6 +23,7 @@ Trie structure to manage username autocomplete and a Segment Tree to analyze use
 ## Complexity Analysis Summary
 
 Exercise, Time complexity, Space complexity
+- ex 1: Influencer Coverage, O(2^N x (N + E)) for exact search and O(N x (N + E)) for greedy approximation , O(N + E) for adjacency list storage and coverage tracking.
 - ex 3: Autocomplete, O(L + S) for prefix search and result collection , O(N x L_{avg}) for total node storage
 
 
